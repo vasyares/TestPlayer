@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="TestOrangeSpain.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestOrangeSpain"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pf="using:Microsoft.PlayerFramework"
+	xmlns:smooth="using:Microsoft.PlayerFramework.Adaptive"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <pf:MediaPlayer 
+			x:Name="Player" 
+			Grid.Row="1"
+            
+			Source="http://80.12.13.72/smooth/DEVIOUS_MAIDS_SEASON1_EPISODE3/DEVIOUS_MAIDS_SEASON1_EPISODE3_Profil3/PRG_0000002061SD_Profil3.ism/Manifest"
+			IsSignalStrengthVisible="True">
+            <pf:MediaPlayer.Plugins>
+                <smooth:AdaptivePlugin x:Name="smoothPlugin" />
+            </pf:MediaPlayer.Plugins>
+        </pf:MediaPlayer>
+    </Grid>
+</Page>
